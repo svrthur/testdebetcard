@@ -40,7 +40,7 @@ public class DebetCardTest {
     void shouldTestNameSymbols() {
         open("http://localhost:9999");
         $("[data-test-id=name] input").setValue("=Дмитрий");
-        $("[data-test-id=phone] input").setValue("+79290234567");
+        $("[data-test-id=phone] input").setValue("+79291234567");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
         $("[data-test-id=name] .input__sub").shouldHave(exactText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
